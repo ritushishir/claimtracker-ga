@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <body>
+    <p>
+      Hello <strong><?= claimDetails['claimantName'] ?></strong>,
+    </p>
+    <p> This is to update you on the following insurance</p>
+       Claim Tracking ID: <strong> <?= claimDetails.trackingID ?></strong><br>
+    </p>
+    <table style="border: 1px;">
+      <tr>
+        <td>Claim For</td><td><strong><?= claimDetails.patientName ?></strong></td>
+      </tr>
+      <tr>
+        <td>Claimed Amount</td><td>Rs. <strong><?= claimDetails.claimAmount ?></strong></td>
+      </tr>
+      <tr>
+        <td>Claim Date</td><td><strong><?= claimDetails.claimDate ?></strong></td>
+      </tr>
+      <tr>
+        <td>STATUS</td><td><strong><?= claimDetails.status ?></strong></td>
+      </tr>
+      <tr>
+        <td>Remarks</td><td><strong><?= claimDetails.remarks ?></strong></td>
+      </tr>
+      <tr>
+        <td>Next Thing</td><td><strong><?= claimDetails.nextStep ?></strong></td>
+      </tr>
+      <tr>
+        <td>Signed On</td><td><strong><?= claimDetails.signedDate ?></strong></td>
+      </tr>
+      <tr>
+        <td>Settelment Amount</td><td><strong><?= claimDetails.settlementAmount ?></strong></td>
+      </tr>
+    </table>
+    <br>
+    <p>Thanks,</p>
+    <p>Nepal Finance Team</p>
+  </body>
+</html>

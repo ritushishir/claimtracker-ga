@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <body style="font-family:verdana;font-size: 14px;">
+    <p>
+      Hello <?= claimDetails['claimantName'] ?>,
+    </p>
+    <p>
+      We received your insurance claim. Please use the following <strong> tracking number </strong> for follow up on this claim. 
+      <br><strong> <?= uid ?> </strong>
+    </p>
+    <p> For your reference, here are the details of your claim<br>
+    <table>
+      <tr>
+        <td> Patient Name </td><td><strong><?= claimDetails['patientName'] ?> </strong></td>
+      </tr>
+      <tr>
+        <td> Total Amount </td><td><strong><?= claimDetails['totalAmount'] ?> </strong></td>
+      </tr>
+      <tr>
+        <td> Visiting Doctor Details </td><td><strong><?= claimDetails['detailsOfDoctor'] ?> </strong></td>
+      </tr>
+      <tr>
+        <td> Hospital Details </td><td><strong><?= claimDetails['hospitalName'] ?> </strong></td>
+      </tr>
+    </table>
+    <p> You can view the claim details <a href="<?= formURL ?>" target="_blank">here</a></p>
+    <br>
+    <p>Thanks,</p>
+    <p>Nepal Finance Team</p>
+  </body>
+</html>
